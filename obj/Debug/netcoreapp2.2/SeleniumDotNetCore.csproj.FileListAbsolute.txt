@@ -1,0 +1,14 @@
+/Users/tanveer/SeleniumDotNetCore/bin/Debug/netcoreapp2.2/NUnit3.TestAdapter.dll
+/Users/tanveer/SeleniumDotNetCore/bin/Debug/netcoreapp2.2/NUnit3.TestAdapter.pdb
+/Users/tanveer/SeleniumDotNetCore/bin/Debug/netcoreapp2.2/nunit.engine.netstandard.dll
+/Users/tanveer/SeleniumDotNetCore/bin/Debug/netcoreapp2.2/SeleniumDotNetCore.deps.json
+/Users/tanveer/SeleniumDotNetCore/bin/Debug/netcoreapp2.2/SeleniumDotNetCore.runtimeconfig.json
+/Users/tanveer/SeleniumDotNetCore/bin/Debug/netcoreapp2.2/SeleniumDotNetCore.runtimeconfig.dev.json
+/Users/tanveer/SeleniumDotNetCore/bin/Debug/netcoreapp2.2/SeleniumDotNetCore.dll
+/Users/tanveer/SeleniumDotNetCore/bin/Debug/netcoreapp2.2/SeleniumDotNetCore.pdb
+/Users/tanveer/SeleniumDotNetCore/obj/Debug/netcoreapp2.2/SeleniumDotNetCore.csprojAssemblyReference.cache
+/Users/tanveer/SeleniumDotNetCore/obj/Debug/netcoreapp2.2/SeleniumDotNetCore.csproj.CoreCompileInputs.cache
+/Users/tanveer/SeleniumDotNetCore/obj/Debug/netcoreapp2.2/SeleniumDotNetCore.AssemblyInfoInputs.cache
+/Users/tanveer/SeleniumDotNetCore/obj/Debug/netcoreapp2.2/SeleniumDotNetCore.AssemblyInfo.cs
+/Users/tanveer/SeleniumDotNetCore/obj/Debug/netcoreapp2.2/SeleniumDotNetCore.dll
+/Users/tanveer/SeleniumDotNetCore/obj/Debug/netcoreapp2.2/SeleniumDotNetCore.pdb
