@@ -19,6 +19,7 @@ namespace SeleniumDotNetCore
         [Test]
         public void FirstTest()
         {
+            Console.WriteLine("this is the first Test");
 
         
 
