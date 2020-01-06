@@ -2,14 +2,14 @@
 using NUnit;
 using NUnit.Framework;
 
-namespace SeleniumDotNetCore
+namespace SeleniumDotNetCore.Tests
 {
     [TestFixture(BrowserType.Chrome)]
     //[TestFixture(BrowserType.Firefox)]
 
-    class TestExecutionClass : TestFixtureBase
+    class FirstTest : TestFixtureBase
     {
-        public TestExecutionClass(BrowserType browserType):base(browserType)
+        public FirstTest(BrowserType browserType):base(browserType)
         { }
         public override void TestSetup()
         {
@@ -17,16 +17,17 @@ namespace SeleniumDotNetCore
             OpenBrowser();
         }
         [Test]
-        public void FirstTest()
+        public void FirstTestMethod()
         {
             Console.WriteLine("this is the first Test");
 
         }
 
         [Test]
-        public void SecondTest()
+        public void SecondTestMethod()
         {
-
+            
+            Console.WriteLine("this is the second test");
         }
     }
 }

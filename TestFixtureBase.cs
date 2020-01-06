@@ -31,7 +31,7 @@ namespace SeleniumDotNetCore
             switch(_browserType)
             {
                 case BrowserType.Chrome:
-                FrameworkHelper.WebDriver = new ChromeDriver();
+                FrameworkHelper.WebDriver = new ChromeDriver(".");
                 break;
 
                 case BrowserType.Firefox:
@@ -48,6 +48,7 @@ namespace SeleniumDotNetCore
         public void TestTearDown()
         {
             //kill process
+            FrameworkHelper.WebDriver.Quit();
         }
 
         internal void OpenBrowser()
