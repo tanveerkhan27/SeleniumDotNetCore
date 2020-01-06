@@ -35,7 +35,7 @@ namespace SeleniumDotNetCore
                 break;
 
                 case BrowserType.Firefox:
-                FrameworkHelper.WebDriver = new FirefoxDriver();
+                FrameworkHelper.WebDriver = new FirefoxDriver(".");
                 break;
 
                 default:
