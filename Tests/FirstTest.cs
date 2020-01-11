@@ -4,8 +4,8 @@ using NUnit.Framework;
 
 namespace SeleniumDotNetCore.Tests
 {
-    //[TestFixture(BrowserType.Chrome)]
-    [TestFixture(BrowserType.Firefox)]
+    [TestFixture(BrowserType.Chrome)]
+    //[TestFixture(BrowserType.Firefox)]
 
     class FirstTest : TestFixtureBase
     {
