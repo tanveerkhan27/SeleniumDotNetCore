@@ -5,7 +5,7 @@ using NUnit.Framework;
 namespace SeleniumDotNetCore.Tests
 {
     [TestFixture(BrowserType.Chrome)]
-    //[TestFixture(BrowserType.Firefox)]
+    [TestFixture(BrowserType.Firefox)]
 
     class FirstTest : TestFixtureBase
     {
@@ -20,6 +20,7 @@ namespace SeleniumDotNetCore.Tests
         public void FirstTestMethod()
         {
             Console.WriteLine("this is the first Test");
+            
 
         }
 

@@ -29,24 +29,21 @@ namespace SeleniumDotNetCore
         [SetUp]
         public virtual void TestSetup()
         {
-            //string host = @"http://localhost:4444/wd/hub";
-            RemoteSessionSettings caps = new RemoteSessionSettings();
-            var chromeoptions = new ChromeOptions();
             switch(_browserType)
             {
                 case BrowserType.Chrome:
-                    //caps.AddMetadataSetting("browserName","chrome");
-                    chromeoptions.AddArgument("no-sandbox");
-                    FrameworkHelper.WebDriver = new RemoteWebDriver(new Uri("http://localhost:4444/wd/hub"),chromeoptions);
+                    ChromeOptions chromeOptions = new ChromeOptions();
+                    chromeOptions.AddArgument("no-sandbox");
+                    FrameworkHelper.WebDriver = new ChromeDriver(ChromeDriverService.CreateDefaultService(),chromeOptions, TimeSpan.FromSeconds(20));
                     break;
 
                 case BrowserType.Firefox:
-                    caps.AddMetadataSetting("browserName","firefox");
-                    FrameworkHelper.WebDriver = new RemoteWebDriver(new Uri("http://localhost:4444/wd/hub"),caps);
+                    FrameworkHelper.WebDriver = new FirefoxDriver();
                     break;
 
                 default:
-                    FrameworkHelper.WebDriver = new ChromeDriver();
+                    ChromeOptions options = new ChromeOptions();
+                    FrameworkHelper.WebDriver = new ChromeDriver(ChromeDriverService.CreateDefaultService(),options, TimeSpan.FromSeconds(20));
                     break;
             }
             FrameworkHelper.wait = new WebDriverWait(FrameworkHelper.WebDriver,TimeSpan.FromSeconds(120));
@@ -54,8 +51,7 @@ namespace SeleniumDotNetCore
         [TearDown]
         public void TestTearDown()
         {
-            //kill process
-            //FrameworkHelper.WebDriver.Quit();
+            FrameworkHelper.WebDriver.Quit();
         }
 
         internal void OpenBrowser()
